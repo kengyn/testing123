@@ -15,18 +15,22 @@
 		IdentityFile ~/.ssh/id_work
 ------------------------------------------------
 ### 4. clone using git user u want
-  git clone git@bruhub.com:[ur actual git username]/[ur actual repo].git
-
+___________________________________
+	git clone git@bruhub.com:[ur actual git username]/[ur actual repo].git
+----------------------------------
 ### 4-1. modify existing repo
-  git remote set-url origin git@bruhub.com:[ur actual git username]/[ur actual repo].git
-
+-----------------------------------------
+	git remote set-url origin git@bruhub.com:[ur actual git username]/[ur actual repo].git
+------------------------------------------
 ### 5. set user for curr repo
-  git config user.name "[name]"
-  git config user.email "[private email found in github settings/emails/keep my email addresses private checkbox description]"
-  ***might or might not need to set ssh here too***
-  git config user.signingkey path/to/.ssh/ssh.pub 
- ***if u already commmited with the wrong author***
-  git commit --amend --reset-author --no-edit
+-----------------------------------------------
+	git config user.name "[name]"
+	git config user.email "[private email found in github settings/emails/keep my email addresses private checkbox description]"
+-----------------------------------------------
+#### ***might or might not need to set ssh here too***
+	git config user.signingkey path/to/.ssh/ssh.pub 
+#### ***if u already commmited with the wrong author***
+	git commit --amend --reset-author --no-edit
 
 
 
